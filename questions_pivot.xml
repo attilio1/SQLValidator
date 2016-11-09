@@ -1,0 +1,25 @@
+<pivot_inquiry>
+	<question>
+		<yesno>Do you want to check date fields?</yesno>
+		<pivot>Please insert pivot</pivot>
+		<column_name>Please insert column name</column_name>
+		<query>
+			<sql>
+			<![CDATA[
+			select count(*) from {table}
+			where {column_name} > {pivot} 
+			]]>
+			</sql>
+			<sql>
+			<![CDATA[
+			select count(*) from {table}
+			where {column_name} < {pivot}
+			]]>
+			</sql>
+			<sql>
+			select count(*) from {table}
+			where {column_name} = {pivot} 
+			</sql>
+		</query>
+	</question>
+</pivot_inquiry>

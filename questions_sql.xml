@@ -1,0 +1,11 @@
+<sql_inquiry>
+	<rule>
+		<table>tab1</table>
+		<where> tab1.id  =   
+		tab2.id </where>
+	</rule>
+	<rule>
+		<table>tab3</table>
+		<where>tab1.id = tab3.id</where>
+	</rule>
+</sql_inquiry>

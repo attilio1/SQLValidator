@@ -1,0 +1,10 @@
+<columns_inquiry>
+	<question>
+		<yesno>Do you want to check for duplicates?</yesno>
+		<prompt>Please include unique columns</prompt>
+		<sql>
+		select {prompt}, count(*) from {table}
+		group by {prompt} having count(*) > 1
+		</sql>
+	</question>
+</columns_inquiry>
